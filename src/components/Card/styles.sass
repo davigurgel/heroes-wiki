@@ -1,0 +1,49 @@
+@import '../../assets/sass/main'
+
+.card
+  position: relative
+  margin-bottom: 16px
+
+  +sm
+    margin: 16px
+
+  img
+    width: 100%
+    border-radius: 4px
+
+  &:hover
+    .card-details
+      height: 100%
+
+      .buttons-details
+        display: flex
+        flex-direction: column
+
+  .card-details
+    width: 100%
+    position: absolute
+    bottom: 0px
+    height: 69px
+    padding: 16px 12px
+    background-color: rgba(0, 0, 0, 0.8)
+    transition: height 0.3s
+
+    .buttons-details
+      display: none
+      width: 100%
+      height: 80%
+      align-items: center
+      justify-content: center
+
+    h2
+      text-transform: uppercase
+      color: white
+      font-weight: 700
+      margin-bottom: 5px
+      text-decoration: none
+
+    span
+      text-transform: uppercase
+      color: white
+      margin-bottom: 5px
+      text-decoration: none

@@ -1,0 +1,47 @@
+@import '../../assets/sass/main'
+
+.button
+  width: 100%
+  height: 48px
+  border-radius: 8px
+  border: 0
+  padding: 0 16px
+  background: $silver
+  color: $black
+  font-weight: 700
+  cursor: pointer
+
+  &:hover
+    background: darken($silver, 10%)
+
+  &.disabled
+    background: darken($silver, 20%)
+
+  +sm
+    border-radius: 0 8px 8px 0
+    width: auto
+    padding: 0 24px
+
+.compare
+  @extend .button
+  border-radius: 8px
+  background: $blue
+  margin-bottom: 16px
+
+  &:hover
+    background: darken($blue, 10%)
+
+  &.disabled
+    background: darken($blue, 20%)
+
+.view
+  @extend .button
+  border-radius: 8px
+  background: $green
+  margin-bottom: 16px
+
+  &:hover
+    background: darken($green, 10%)
+
+  &.disabled
+    background: darken($green, 20%)

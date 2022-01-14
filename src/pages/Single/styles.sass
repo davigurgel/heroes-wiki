@@ -1,0 +1,57 @@
+@import '../../assets/sass/main'
+
+.single
+  padding: 16px
+  margin: 0 auto
+  max-width: 1200px
+
+  .hero-name
+    color: $white
+    text-align: center
+    padding-bottom: 48px
+
+    h1
+      font-size: 50px
+      font-weight: 900
+      text-transform: uppercase
+
+  .single-wrapper
+    width: 100%
+    margin: 0 auto
+
+    +md
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-column-gap: 16px
+
+    .image
+      img
+        width: 100%
+
+    .content-info
+      color: $white
+
+    .content-powerstats
+      color: $white
+
+    .section-title
+      margin: 24px 0
+
+      +md
+        margin: 0 0 24px 0
+
+      h3
+        font-size: 18px
+        font-weight: 900
+        text-transform: uppercase
+
+    .section-info
+      margin-bottom: 8px
+
+      h3
+        font-weight: 900
+        font-size: 18px
+
+      span
+        font-size: 14px
+
